@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- CSS -->
@@ -27,8 +28,8 @@
             <nav role="navigation" class="navbar">
                 <a href="index.html"><h1>My Portfolio</h1></a>
                 <ul class="navigation">
-                    <a href="index.html" class="nav-item"><li>Home</li></a>
-                    <a href="portfolio.html" class="nav-item"><li>Portfolio</li></a>
+                    <li><a href="index.html" class="nav-item active">Home</a></li>
+                    <li><a href="portfolio.html" class="nav-item">Portfolio</a></li>
                 </ul>
             </nav>
         </header>
@@ -36,10 +37,12 @@
             <article class="about-section" id="home-main">
                 <h2 class="section-heading">About Me</h2>
                 <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, sapiente vel repellendus voluptatibus temporibus cumque dignissimos asperiores, quae at tempora aperiam delectus voluptatum eaque laudantium animi voluptas. Voluptates, hic nostrum?</p>
+                <div class="about-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, sapiente vel repellendus voluptatibus temporibus cumque dignissimos asperiores, quae at tempora aperiam delectus voluptatum eaque laudantium animi voluptas. Voluptates, hic nostrum?</p>
+                </div>
             </article>
     
-            <article class="work-section">
+            <nav class="work-section" role="navigation">
                 <h2 class="section-heading">My Work</h2>
                 <hr>
                 <div class="work-grid">
@@ -56,7 +59,7 @@
                         <a class="btn-1" href="portfolio.html">See Work</a>
                     </div>
                 </div>
-            </article>
+            </nav>
         </main>
         <footer>
             <p class="copyright">Copyright 2024</p>

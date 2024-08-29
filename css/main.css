@@ -31,12 +31,16 @@ html {
     box-sizing: inherit;
   }
 
-h1, h2, h3 {
+h1 {
+    font-family: "Playwrite BE VLG", cursive;
+}
+
+h2, h3 {
     font-family: "Playfair Display", serif;
 }
 
 h1 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
 }
 
 h2 {
@@ -56,10 +60,26 @@ a:focus {
     outline: 4px solid black;
 }
 
+/* Wrapper */
+
 .wrapper {
     max-width: 860px;
     margin: 0 auto;
 }
+
+/* @media (max-width: 860px) {
+    .wrapper {
+        max-width: 860px;
+        margin: 0 auto;
+    }
+} */
+
+/* @media (min-width: 860px) {
+    .wrapper {
+        max-width: 100%;  
+    } 
+} */
+
 
 .btn-1 {
     background-color: var(--primary);
@@ -121,12 +141,13 @@ a:focus {
     justify-content: space-between;
     align-items: center;
     background-color: var(--dark);
+    padding: 10px;
 }
 
 .navbar h1 {
     font-weight: bold;
     margin: 16px;
-    color: var(--light);
+    color: var(--primary);
 }
 
 .navbar a {
@@ -154,6 +175,13 @@ a:focus {
     text-decoration: underline;
     color: var(--primary);
 }
+
+.active {
+    background-color: var(--primary);
+    padding: 10px;
+    color: black;
+}
+
 /* 
     ---------
     MAIN PAGE
@@ -171,16 +199,14 @@ a:focus {
     text-align: center;
 }
 
+.about-content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 /* 
     --------MY WORK-------- 
 */
-
-.work-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .work-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -191,9 +217,40 @@ a:focus {
 .work-item {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: var(--light);
-    padding: 130px;
+    padding: 150px;
+    margin: 30px;
 }
+
+.work-item .btn-1 {
+    align-self: center;
+    margin: 15px;
+}
+
+/* @media (min-width: 900px) {
+
+    .work-grid {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "c c c b b b"
+            ". a a a a .";
+    }
+
+    .work-item:nth-child(1) {
+        grid-area: a;
+    }
+
+    .work-item:nth-child(2) {
+        grid-area: b;
+    }
+
+    .work-item:nth-child(3) {
+        grid-area: c;
+    }
+
+} */
 
 /* 
     --------FOOTER-------- 
@@ -207,11 +264,12 @@ footer {
 }
 
 footer p {
+    font-size: 1.2rem;
     margin: 10px;
 }
 
 .icons {
-    font-size: 2rem;
+    font-size: 2.3rem;
     margin: 10px;
 }
 
