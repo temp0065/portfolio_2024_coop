@@ -1,4 +1,4 @@
-# portfolio_2024_coop
+# My Portfolio
 
 ## Assets/Recources Used
 - All images are from unsplash.com
