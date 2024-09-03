@@ -36,13 +36,14 @@ h1 {
 }
 
 h2 {
-    font-size: 3.2rem;
+    font-size: 3.4rem;
     text-decoration: underline;
 }
 
 h3 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 800;
+    color: var(--tertiary);
 }
 
 hr {
@@ -123,6 +124,7 @@ a:focus {
 }
 
 .navbar h1:hover {
+    transition: 0.5s ease-in-out;
     color: var(--secondary);
 }
 
@@ -141,7 +143,6 @@ a:focus {
 
 .nav-item:hover {
     text-decoration: underline;
-    color: var(--primary);
 }
 
 .active {
@@ -165,6 +166,7 @@ a:focus {
 /* 
     --------MY WORK-------- 
 */
+
 .work-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -178,34 +180,59 @@ a:focus {
     align-items: center;
     padding: 150px;
     margin: 20px;
+    background-color: #f8f8f8;
 }
 
 .work-item h3 {
-    color: var(--tertiary);
     padding: 15px;
-    /* border: 2px solid var(--tertiary); */
+    color: #ffffff;
 }
 
 .work-item .btn-1 {
     align-self: center;
     margin: 40px 0 5px 0;
+    color: var(--light);
 }
+
+.work-item .btn-1:hover {
+    box-shadow: none;
+}
+
+/* Background images */
+
+#web {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/web-design.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#graphic {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/graphic-design.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#user {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/ux.jpg) no-repeat center;
+    background-size: cover;
+}
+
 
 /* 
     --------FOOTER-------- 
 */
+
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     color: var(--light);
+    margin-top: 40px;
 }
 
 footer p {
     font-size: 1.2rem;
     margin: 20px;
-    color: black;
+    color: var(--light);
 }
 
 .icons {
@@ -214,11 +241,11 @@ footer p {
 }
 
 .icons .bi {
-    color: var(--dark);
+    color: var(--light);
 }
 
 .icons .bi:hover {
-    color: var(--tertiary);
+    color: var(--secondary);
 }
 
 /* 
@@ -234,7 +261,7 @@ footer p {
 .portfolio-item {
     display: flex;
     flex-direction: column;
-    background-color: var(--light);
+    background-color: #f8f8f8;
     margin: 20px;
 }
 
@@ -260,7 +287,7 @@ footer p {
     }
 }
 
-@media (max-width: 545px) {
+@media (max-width: 600px) {
 
     /* Navigation */
     .logo {
@@ -320,9 +347,16 @@ footer p {
 }
 
 @media (hover:hover) {
+
     .work-item:hover {
         transition: 0.6s ease-in-out;
         transform: translateY(-10px);
         box-shadow: 23px 23px var(--dark);
+    }
+
+    .portfolio-item:hover {
+        transition: 0.6s ease-in-out;
+        transform: translateY(-10px);
+        box-shadow: 17px 17px var(--dark);
     }
 }
