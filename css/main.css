@@ -296,7 +296,7 @@ footer p {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     /* Navigation */
     .logo {
@@ -310,11 +310,15 @@ footer p {
 
     /* Work Section */
     .work-item {
-        padding: 80px;
+        padding: 60px;
     }
 
     .work-item .btn-1 {
         font-size: 1.4rem;
+    }
+
+    iframe {
+        width: 380px;
     }
 }
 
@@ -345,6 +349,18 @@ footer p {
     .portfolio-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .prototypes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        margin: 15px;
+    }
+
+    .prototype {
+        width: 100%;
     }
 }
 
