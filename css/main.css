@@ -1,17 +1,9 @@
-/*--------COLOUR SCHEME-------- 
-    Xanthous #FFC759
-    Rose Pompadour #FF7B9C
-    Gloucous #607196
-    French Gray #BABFD1
-    Anti-Flash White #E8E9ED
-*/
-
 :root {
-    --dark: #607196;
-    --light: #E8E9ED;
-    --primary: #FFC759;
+    --dark: #291F1E;
+    --light: #fff;
+    --primary: #F64740;
     --secondary: #ff8088;
-    --tertiary: #BABFD1;
+    --tertiary: #477998;
 }
 
 /* 
@@ -44,23 +36,22 @@ h1 {
 }
 
 h2 {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     text-decoration: underline;
 }
 
 h3 {
-    font-size: 2.3rem;
+    font-size: 2.8rem;
+    font-weight: 800;
 }
 
 hr {
-    width: 100%;
+    width: 95%;
 }
 
 a:focus {
     outline: 4px solid black;
 }
-
-/* Wrapper */
 
 .wrapper {
     max-width: 860px;
@@ -69,7 +60,8 @@ a:focus {
 
 
 .btn-1 {
-    background-color: var(--primary);
+    background-color: transparent;
+    border: 2px solid var(--primary);
     color: black;
     padding: 30px;
     font-size: 1.4rem;
@@ -78,23 +70,10 @@ a:focus {
 
 .btn-1:hover {
     transition: ease-in-out 0.4s;
-    background-color: var(--dark);
+    background-color: var(--primary);
     color: var(--light);
     text-decoration: underline;
     box-shadow: 5px 5px black;
-}
-
-.resume-btn {
-    background-color: var(--secondary);
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: var(--light);
-}
-
-.resume-btn:hover {
-    background-color: var(--dark);
-    text-decoration: underline;
 }
 
 .skip-links {
@@ -107,8 +86,8 @@ a:focus {
 .skip-links a {
     position: absolute;
     top: -3em;
-    background-color: var(--secondary);
-    color:white;
+    background-color: var(--tertiary);
+    color: var(--light);
     padding: .5em 1em;
     font-weight: bold;
 }
@@ -119,7 +98,7 @@ a:focus {
 
 .section-heading {
     text-align: center;
-    margin: 25px;
+    margin: 65px;
 }
 
 /* 
@@ -144,7 +123,7 @@ a:focus {
 }
 
 .navbar h1:hover {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 .navigation {
@@ -184,22 +163,6 @@ a:focus {
 */
 
 /* 
-    --------ABOUT ME-------- 
-*/
-
-.about-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.about-content {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-/* 
     --------MY WORK-------- 
 */
 .work-grid {
@@ -213,9 +176,14 @@ a:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--light);
     padding: 150px;
     margin: 20px;
+}
+
+.work-item h3 {
+    color: var(--tertiary);
+    padding: 15px;
+    /* border: 2px solid var(--tertiary); */
 }
 
 .work-item .btn-1 {
@@ -230,26 +198,27 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--dark);
+    background-color: var(--secondary);
     color: var(--light);
 }
 
 footer p {
     font-size: 1.2rem;
-    margin: 10px;
+    margin: 20px;
+    color: black;
 }
 
 .icons {
     font-size: 2.6rem;
-    margin: 10px;
+    margin: 20px;
 }
 
 .icons .bi {
-    color: var(--tertiary);
+    color: var(--dark);
 }
 
 .icons .bi:hover {
-    color: var(--secondary);
+    color: var(--tertiary);
 }
 
 /* 
@@ -354,6 +323,6 @@ footer p {
     .work-item:hover {
         transition: 0.6s ease-in-out;
         transform: translateY(-10px);
-        box-shadow: 23px 23px rgb(255, 128, 136, 9.8);
+        box-shadow: 23px 23px var(--dark);
     }
 }
