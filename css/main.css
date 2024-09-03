@@ -170,7 +170,7 @@ a:focus {
 .work-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
     gap: 10px;
 }
 
@@ -199,16 +199,15 @@ a:focus {
 }
 
 /* Background images */
-
 #web {
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/web-design.jpg) no-repeat center;
     background-size: cover;
 }
 
-#graphic {
+/* #graphic {
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/graphic-design.jpg) no-repeat center;
     background-size: cover;
-}
+} */
 
 #user {
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/ux.jpg) no-repeat center;
@@ -274,6 +273,16 @@ footer p {
     align-self: flex-start;
 }
 
+.prototypes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sources {
+    text-align: center;
+}
+
 /* 
     ---------
     MEDIA QUERIES
@@ -319,23 +328,16 @@ footer p {
     /* Work Section */
 
     .work-grid {
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-            "c c c c b b b b"
-            ". . a a a a . .";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
     .work-item:nth-child(1) {
-        grid-area: a;
+        grid-column: 1;
     }
 
     .work-item:nth-child(2) {
-        grid-area: b;
-    }
-
-    .work-item:nth-child(3) {
-        grid-area: c;
+        grid-column: 2;
     }
 
     /* Portfolio Items */
