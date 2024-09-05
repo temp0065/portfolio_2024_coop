@@ -353,10 +353,25 @@ footer p {
 
     .prototypes {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1fr 1fr;
         gap: 10px;
         margin: 15px;
+        grid-template-areas: 
+        "a a a b b b"
+        "c c c c c c";
+    }
+
+    .prototypes article:nth-child(1) {
+        grid-area: a;
+    }
+
+    .prototypes article:nth-child(2) {
+        grid-area: b;
+    }
+
+    .prototypes article:nth-child(3) {
+        grid-area: c;
     }
 
     .prototype {
