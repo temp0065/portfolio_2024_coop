@@ -25,25 +25,20 @@ html {
 
 h1 {
     font-family: "Playwrite BE VLG", cursive;
+    font-size: 2.8rem;
 }
 
 h2, h3 {
     font-family: "Playfair Display", serif;
 }
 
-h1 {
-    font-size: 2.8rem;
-}
-
 h2 {
     font-size: 3.4rem;
-    text-decoration: underline;
 }
 
 h3 {
     font-size: 3rem;
     font-weight: 800;
-    color: var(--tertiary);
 }
 
 hr {
@@ -73,8 +68,8 @@ a:focus {
     transition: ease-in-out 0.4s;
     background-color: var(--primary);
     color: var(--light);
-    text-decoration: underline;
     box-shadow: 5px 5px black;
+    text-decoration: underline;
 }
 
 .skip-links {
@@ -99,7 +94,7 @@ a:focus {
 
 .section-heading {
     text-align: center;
-    margin: 65px;
+    margin: 80px 0 30px 0;
 }
 
 /* 
@@ -240,11 +235,12 @@ footer p {
 }
 
 .icons .bi {
-    color: var(--light);
+    color: #6b1e1b;
 }
 
 .icons .bi:hover {
-    color: var(--secondary);
+    transition: 0.5s;
+    color: #942824;
 }
 
 /* 
@@ -260,8 +256,16 @@ footer p {
 .portfolio-item {
     display: flex;
     flex-direction: column;
-    background-color: #f8f8f8;
+    background-color: #1b2930;
     margin: 20px;
+}
+
+.portfolio-item h3 {
+    color: #40b6ff;
+}
+
+.portfolio-item p {
+    color: #38a1e3;
 }
 
 .portfolio-item h3, .portfolio-item p{
@@ -271,6 +275,7 @@ footer p {
 .portfolio-item .btn-1 {
     margin: 15px;
     align-self: flex-start;
+    color: var(--light);
 }
 
 .prototypes {
