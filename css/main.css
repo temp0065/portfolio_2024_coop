@@ -66,6 +66,7 @@ h2 {
 .btn-1 {
     background-color: transparent;
     border: 1px solid var(--secondary);
+    color: var(--light);
     padding: 30px;
     font-size: 1.5rem;
     text-decoration: none;
@@ -342,11 +343,11 @@ footer p {
     text-align: center;
 }
 
-.portfolio-section a {
+.portfolio-item p a {
     color: #0d71d5;
 }
 
-.portfolio-section a:hover {
+.portfolio-section p a:hover {
     color: #0f86fc;
 }
 
