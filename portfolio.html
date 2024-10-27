@@ -7,118 +7,154 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- CSS -->
-    <link href="./css/reset.css" rel="stylesheet">
-    <link href="./css/main.css" rel="stylesheet">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/minify.css">
 </head>
-<body>
-    <div class="wrapper">
-        <header role="heading" id="portfolio-start">
-            <!-- Invisible skip links -->
-            <nav role="navigation" class="skip-links">
-                <ul>
-                    <li><a href="#portfolio-start">Go back to start</a></li>
-                    <li><a href="#portfolio-main">Skip to main content</a></li>
-                </ul>
-            </nav>
-            <nav role="navigation" class="navbar">
-                <a href="index.html"><h1 class="logo">My Portfolio</h1></a>
-                <ul class="navigation">
-                    <li><a href="index.html" class="nav-item">Home</a></li>
-                    <li><a href="portfolio.html" class="nav-item active">Portfolio</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main role="main" id="portfolio-main">
-            <article class="web-article">
-                <h2 class="section-heading" id="#web-design">Web Design</h2>
+<body class="wrapper">
+        <!-- Invisible skip links -->
+    <nav class="skip-links">
+        <ul>
+            <li><a href="#portfolio-start">Go back to start</a></li>
+            <li><a href="#portfolio-main">Skip to main content</a></li>
+        </ul>
+    </nav>
+    <nav class="navbar">
+        <a href="index.html"><h1 class="logo" aria-label="Return to homepage">Portfolio</h1></a>
+        <ul class="navigation">
+            <li><a href="index.html" class="nav-item">Home</a></li>
+            <li><a href="portfolio.html" class="nav-item active">Portfolio</a></li>
+        </ul>
+    </nav>
+    <header class="home-banner" id="portfolio-start">
+        <div class="banner-content">
+            <h2>Welcome To My Portfolio!</h2>
+            <p>My name is Nathan, and here you can find a collection of my web design, user experience design, graphic design, and video production work. I specialize in web development, but I also possess a wide array of graphic design, video production, and user experience design skills.</p>
+        </div>
+    </header>
+        <main id="portfolio-main">
+            <article class="web-article portfolio-section" aria-labelledby="web-design">
+                <div class="heading-background">
+                    <div>
+                        <h2 class="section-heading" id="web-design">Web Design</h2>
+                    </div>
+                </div>
                 <div class="portfolio-grid">
                     <div class="portfolio-item">
                         <h3>Hospital Website Design</h3>
                         <p>This project uses the Bootstrap CSS framework to recreate a prototype I built in my UX/UI class.</p>
-                        <a class="btn-1" target="_blank" href="https://temp0065.github.io/mtm6201_final/">See Project</a>
+                        <a class="btn-1" target="_blank" href="https://temp0065.github.io/mtm6201_final/" aria-label="Open hospital webpage">See Project</a>
                     </div>
     
                     <div class="portfolio-item">
                         <h3>Restaurant Website Recreation</h3>
-                        <p>This website is a recreation of a prototype.</p>
-                        <a class="btn-1" target="_blank" href="https://temp0065.github.io/mtm6201-midterm/">See Project</a>
+                        <p>This website is a recreation of a <a href="https://www.figma.com/design/vaBd4cktmsOVlU7JNIWnBr/Food-delivery-app-Ui-kit-(Community)?node-id=513-21&node-type=canvas&t=oMEEGCMiobYajTZF-0" target="_blank">prototype from the Figma community</a>. Was an exercise in HTML and CSS responsive design.</p>
+                        <a class="btn-1" target="_blank" href="https://temp0065.github.io/mtm6201-midterm/" aria-label="Open restaurant webpage">See Project</a>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <h3>WordPress Travel Website</h3>
+                        <p>This website was made using WordPress and is hosted using Pantheon. The website uses an Astra child theme, and has content dynamically added to the page using PHP.</p>
+                        <a class="btn-1" target="_blank" href="https://dev-cros0247.pantheonsite.io/" aria-label="Open restaurant webpage">See Project</a>
                     </div>
                 </div>
             </article>
-            <!-- <article class="graphic-article portfolio-section">
-                <h2 class="section-heading" id="graphic-design">Graphic Design</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <h3>Avatar Icon</h3>
-                        <p>Built vector graphics of an avatar representing an alien, using all 3 major Apple dimensions.</p>
-                        <a class="btn-1" href="#">See Project</a>
-                    </div>
     
-                    <div class="portfolio-item">
-                        <h3>Movie Poster</h3>
-                        <p>Created a monster themed movie poster using Photoshop.</p>
-                        <a class="btn-1" href="#">See Project</a>
+            <article class="user-article portfolio-section" aria-labelledby="user-experience">
+                <div class="heading-background">
+                    <div>
+                        <h2 class="section-heading" id="user-experience">User Experience</h2>
                     </div>
                 </div>
-            </article> -->
-            <article class="user-article portfolio-section">
-                <h2 class="section-heading" id="user-experience">User Experience</h2>
                 <div class="portfolio-grid">
                     <div class="portfolio-item">
-                        <h3>Hospital UX/UI Design</h3>
-                        <p>A website prototype for a mock hospital monitoring service.</p>
-                        <a class="btn-1" href="hospital.html">See Project</a>
-                    </div>
-    
-                    <div class="portfolio-item">
-                        <h3>Fashion Website Prototype</h3>
-                        <p>A prototype made for a mock client's fashion website. All images used are from Unsplash. Includes home, about, and contact pages.</p>
-                        <a class="btn-1" target="_blank" href="https://www.figma.com/proto/3EJpIuVFYpszwteHHtY0S2/templeton-nathan-p02?page-id=20%3A20&node-id=20-24&node-type=CANVAS&viewport=1014%2C574%2C0.1&t=HPl88Fp4lb8QCJYD-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=20%3A24&share=1">See Project</a>
+                        <h3>Hi-Fidelity Wireframes - Website Redesign</h3>
+                        <p>Worked within a group to redesign a hobbyist website. Designed homepage and assisted with the design of all other pages.</p>
+                        <a class="btn-1" target="_blank" href="pdf/trintiy_hobby_hifi_wireframes.pdf" aria-label="Open hi-fidelity wireframes PDF">See Project</a>
                     </div>
 
                     <div class="portfolio-item">
                         <h3>Pokédex Mockup</h3>
-                        <p>A mockup for a Pokédex website I will be developing later, which will utilize PokéAPI to dynamically display all Pokémon.</p>
-                        <a class="btn-1" target="_blank" href="pokedex_mockup.pdf">See Project</a>
+                        <p>A mockup for a Pokédex website I will be developing later, which will utilize the PokéAPI to dynamically display all Pokémon.</p>
+                        <a class="btn-1" target="_blank" href="pdf/pokedex_mockup.pdf" aria-label="Open Pokédex PDF">See Project</a>
                     </div>
-                </div>
-            </article>
 
-            <!-- <article class="video-article portfolio-section"></article>
-                <h2 class="section-heading" id="video">Video</h2>
-                <div class="portfolio-grid">
                     <div class="portfolio-item">
                         <h3>Hospital UX/UI Design</h3>
-                        <p>A website prototype for a mock hospital monitoring service.</p>
-                        <a class="btn-1" href="hospital.html">See Project</a>
+                        <p>A website prototype for a mock hospital monitoring service. Personas, mood boards, user journey maps, sitemaps, low-fidelity wireframes, and hi-fidelity wireframes for the service were all made prior to the prototype.</p>
+                        <a class="btn-1" href="hospital.html" aria-label="Open Figma preview page">See Project</a>
                     </div>
     
                     <div class="portfolio-item">
                         <h3>Fashion Website Prototype</h3>
                         <p>A prototype made for a mock client's fashion website. All images used are from Unsplash. Includes home, about, and contact pages.</p>
-                        <a class="btn-1" href="https://www.figma.com/proto/3EJpIuVFYpszwteHHtY0S2/templeton-nathan-p02?page-id=20%3A20&node-id=20-24&node-type=CANVAS&viewport=1014%2C574%2C0.1&t=HPl88Fp4lb8QCJYD-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=20%3A24&share=1">See Project</a>
+                        <a class="btn-1" target="_blank" href="https://www.figma.com/proto/3EJpIuVFYpszwteHHtY0S2/templeton-nathan-p02?page-id=20%3A20&node-id=20-24&node-type=CANVAS&viewport=1014%2C574%2C0.1&t=HPl88Fp4lb8QCJYD-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=20%3A24&share=1" aria-label="Open prototype in Figma">See Project</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="user-article portfolio-section" aria-labelledby="graphic-design">
+                <div class="heading-background">
+                    <div>
+                        <h2 class="section-heading" id="graphic-design">Graphic Design</h2>
+                    </div>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <h3>Movie Poster</h3>
+                        <p>A fun movie poster I designed using Adobe Photoshop. Meant to be a parody of cheesy monster movies.</p>
+                        <a class="btn-1" target="_blank" href="pdf/movie_poster.pdf" aria-label="Open movie poster PDF">See Project</a>
                     </div>
 
                     <div class="portfolio-item">
-                        <h3>Pokedex Mockup</h3>
-                        <p>A mockup for a Pokedex website I will be developing later, which will utilize PokeAPI to dynamically display all Pokemon.</p>
-                        <a class="btn-1" target="_blank" href="pokedex_mockup.pdf">See Project</a>
+                        <h3>Avatar Icons For Apple</h3>
+                        <p>A series of illustrations designed for mobile, tablet, and desktop Apple screen sizes made using Adobe Illustrator. Started by drafting sketches on paper for the professor's approval, and then applied the teachers feedback to the final designs.</p>
+                        <a class="btn-1" target="_blank" href="pdf/avatar_illustrations.pdf" aria-label="Open avatar illustrations PDF">See Project</a>
                     </div>
                 </div>
-            </article> -->
+            </article>
+
+            <section class="video-article portfolio-section" aria-labelledby="video-production">
+                <div class="heading-background">
+                    <div>
+                        <h2 class="section-heading" id="video-production">Video Production</h2>
+                    </div>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <h3>Director Interview</h3>
+                        <p>A short interview that was filmed with a classmate. I filmed the content, assisted in preparing the lighting, assisted in recording the audio, and edited the video and audio using Adobe Premier Pro and Adobe Audition.</p>
+                        <a class="btn-1" target="_blank" href="https://youtu.be/hqCBs733sZg">See Project</a>
+                    </div>
+    
+                    <div class="portfolio-item">
+                        <h3>Lighting Tutorial</h3>
+                        <p>A tutorial where my classmate gives some helpful tips about lighting. I filmed the content, assisted in lighting the scenes, assisted in recording the audio, and edited the video and audio using Adobe Premier Pro and Adobe Audition.</p>
+                        <a class="btn-1" target="_blank" href="https://youtu.be/Q4fD_I6-Pv0">See Project</a>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <h3>Audio Exercise</h3>
+                        <p>This video project was made to practice using foley audio. I designed the storyboards, assisted in filming the content, assisted in lighting the scene, edited the video in Adobe Premier Pro, and edited the audio in Adobe Audition. </p>
+                        <a class="btn-1" target="_blank" href="https://youtu.be/baOEUC2cbmI">See Project</a>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <h3>Story Based Interview</h3>
+                        <p>An interview of a classmate, which was filmed by me and a group member. I assisted in all aspects of the filming and edited the content.</p>
+                        <a class="btn-1" target="_blank" href="https://youtu.be/Sew9d-Wdqd8">See Project</a>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             <p class="copyright">Copyright Nathan Templeton 2024</p>
             <div class="icons">
-                <a href="https://github.com/temp0065"><i class="bi bi-github"></i></a>
+                <a href="https://github.com/temp0065" target="_blank" aria-label="See Github"><i class="bi bi-github"></i></a>
             </div>
         </footer>
-    </div>
-
 </body>
 </html>

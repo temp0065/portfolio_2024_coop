@@ -7,58 +7,66 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- CSS -->
-    <link href="./css/reset.css" rel="stylesheet">
-    <link href="./css/main.css" rel="stylesheet">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/minify.css">
 </head>
-<body>
-    <div class="wrapper">
-        <header role="heading" id="home-start">
-            <!-- Invisible skip links -->
-            <nav role="navigation" class="skip-links">
-                <ul>
-                    <li><a href="#home-start">Go back to start</a></li>
-                    <li><a href="#home-main">Skip to main content</a></li>
-                </ul>
-            </nav>
-            <nav role="navigation" class="navbar">
-                <a href="index.html"><h1 class="logo">My Portfolio</h1></a>
-                <ul class="navigation">
-                    <li><a href="index.html" class="nav-item active">Home</a></li>
-                    <li><a href="portfolio.html" class="nav-item">Portfolio</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main role="main" id="home-main">
-            <nav class="work-section" role="navigation">
-                <h2 class="section-heading">My Work</h2>
-                <hr>
-                <div class="work-grid">
-                    <div class="work-item" id="web">
-                        <h3>Web Design</h3>
-                        <a class="btn-1" href="portfolio.html#web-design">See Work</a>
-                    </div>
-                    <!-- <div class="work-item" id="graphic">
-                        <h3>Graphic Design</h3>
-                        <a class="btn-1" href="portfolio.html#graphic-design">See Work</a>
-                    </div> -->
-                    <div class="work-item" id="user">
-                        <h3>User Experience Design</h3>
-                        <a class="btn-1" href="portfolio.html#user-experience">See Work</a>
-                    </div>
+<body class="wrapper">
+    <!-- Invisible skip links -->
+    <nav class="skip-links">
+        <ul>
+            <li><a href="#home-start">Go back to start</a></li>
+            <li><a href="#home-main">Skip to main content</a></li>
+        </ul>
+    </nav>
+    <nav class="navbar">
+        <a href="index.html"><h1 class="logo" aria-label="Return to homepage">Portfolio</h1></a>
+        <ul class="navigation">
+            <li><a href="index.html" class="nav-item active">Home</a></li>
+            <li><a href="portfolio.html" class="nav-item">Portfolio</a></li>
+        </ul>
+    </nav>
+    <header class="home-banner" id="home-start">
+        <div class="banner-content">
+            <h2>Welcome To My Portfolio!</h2>
+            <p>My name is Nathan, and here you can find a collection of my web design, user experience design, graphic design, and video production work. I specialize in web development, but I also possess a wide array of graphic design, video production, and user experience design skills.</p>
+        </div>
+    </header>
+    <main id="home-main">
+        <section class="work-section">
+            <div class="heading-background">
+                <div>
+                    <h2 class="section-heading">My Work</h2>
                 </div>
-            </nav>
-        </main>
-        <footer>
-            <p class="copyright">Copyright Nathan Templeton 2024</p>
-            <div class="icons">
-                <a href="https://github.com/temp0065"><i class="bi bi-github"></i></a>
             </div>
-        </footer>
-    </div>
+            <section class="work-grid" aria-label="The different types of work I have done">
+                <article class="work-item" id="web" aria-labelledby="web-title">
+                    <h3 id="web-title">Web Design</h3>
+                    <a class="btn-1" href="portfolio.html#web-design" aria-labelledby="web-title">See Work</a>
+                </article>
+                <article class="work-item" id="user" aria-labelledby="ux-title">
+                    <h3 id="ux-title">User Experience Design</h3>
+                    <a class="btn-1" href="portfolio.html#user-experience" aria-labelledby="ux-title">See Work</a>
+                </article>
+                <article class="work-item" id="graphic" aria-labelledby="graphic-title">
+                    <h3 id="graphic-title">Graphic Design</h3>
+                    <a class="btn-1" href="portfolio.html#graphic-design">See Work</a>
+                </article>
+                <article class="work-item" id="video" aria-labelledby="video-title">
+                    <h3 id="video-title">Video Production</h3>
+                    <a class="btn-1" href="portfolio.html#video-production">See Work</a>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">Copyright Nathan Templeton 2024</p>
+        <div class="icons">
+            <a href="https://github.com/temp0065" target="_blank" aria-label="See Github"><i class="bi bi-github"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
