@@ -15,7 +15,7 @@ function setUpTopNav(e) {
     else {
         // is tablet/desktop
         console.log("is desktop");
-        $offScreenMenu.removeAttributeAttribute("intert");
+        $offScreenMenu.removeAttribute("intert");
         closeMobileMenu();
     }
 }

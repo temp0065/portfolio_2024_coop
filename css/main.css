@@ -283,17 +283,14 @@ a:hover {
 }
 
 
-/* .active {
-    background-color: var(--light);
-    padding: 10px 30px;
-    color: var(--dark);
+.active {
+    background-color: var(--primary-dark);
+    padding: 0.6em 1em;
+    color: var(--light);
     border-radius: 2px;
-}
-
-.active:hover {
     transition: ease-in-out 0.4s;
     box-shadow: 5px 5px var(--dark);
-} */
+}
 
 /* 
     --------
