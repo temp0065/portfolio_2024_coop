@@ -7,12 +7,12 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Press+Start+2P&display=swap" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/minify.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="wrapper">
     <!-- Invisible skip links -->
@@ -22,43 +22,101 @@
             <li><a href="#home-main">Skip to main content</a></li>
         </ul>
     </nav>
+
     <nav class="navbar">
-        <a href="index.html"><h1 class="logo" aria-label="Return to homepage">Portfolio</h1></a>
-        <ul class="navigation">
-            <li><a href="index.html" class="nav-item active">Home</a></li>
-            <li><a href="portfolio.html" class="nav-item">Portfolio</a></li>
-        </ul>
+        <a href="index.html" aria-label="Return to homepage"><img src="images/personal_logo.svg" alt="My logo" width="100" height="100" class="logo"></a>
+        <span id="nav-label" hidden>Navigation</span>
+        <button class="hamburger-menu" aria-expanded="false" aria-labelledby="nav-label" id="btnOpen"><i class="bi bi-list"></i></button>
+        <div class="off-screen-menu" role="dialog">
+            <button class="hamburger-close" id="btnClose" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+            <ul class="navigation">
+                <li><a href="index.html" class="nav-item active">Home</a></li>
+                <li><a href="portfolio.html" class="nav-item">Portfolio</a></li>
+            </ul>
+        </div>
     </nav>
     <header class="home-banner" id="home-start">
         <div class="banner-content">
-            <h2>Welcome To My Portfolio!</h2>
-            <p>My name is Nathan, and here you can find a collection of my web design, user experience design, graphic design, and video production work. I specialize in web development, but I also possess a wide array of graphic design, video production, and user experience design skills.</p>
+            <h1>Press Start</h1>
+            <p>My name is Nathan, and here you can find a collection of my web design, user experience design, graphic design, and video production work.</p>
+            <div class="header-btns">
+                <a href="portfolio.html" class="primary-btn" role="button">
+                    <span></span>
+                    View Portfolio
+                    <span></span>
+                </a>
+                <a href="https://github.com/temp0065" target="_blank" class="primary-btn" role="button">
+                    <span></span>
+                    View Github
+                    <span></span>
+                </a>
+            </div>
         </div>
+        <div class="fuzzy-overlay"></div>
     </header>
     <main id="home-main">
-        <section class="work-section">
+        <section class="work-section" aria-labelledby="work-heading">
             <div class="heading-background">
                 <div>
-                    <h2 class="section-heading">My Work</h2>
+                    <h2 class="section-heading" id="work-heading">My Work</h2>
                 </div>
             </div>
             <section class="work-grid" aria-label="The different types of work I have done">
-                <article class="work-item" id="web" aria-labelledby="web-title">
-                    <h3 id="web-title">Web Design</h3>
-                    <a class="btn-1" href="portfolio.html#web-design" aria-labelledby="web-title">See Work</a>
-                </article>
-                <article class="work-item" id="user" aria-labelledby="ux-title">
-                    <h3 id="ux-title">User Experience Design</h3>
-                    <a class="btn-1" href="portfolio.html#user-experience" aria-labelledby="ux-title">See Work</a>
-                </article>
-                <article class="work-item" id="graphic" aria-labelledby="graphic-title">
-                    <h3 id="graphic-title">Graphic Design</h3>
-                    <a class="btn-1" href="portfolio.html#graphic-design">See Work</a>
-                </article>
-                <article class="work-item" id="video" aria-labelledby="video-title">
-                    <h3 id="video-title">Video Production</h3>
-                    <a class="btn-1" href="portfolio.html#video-production">See Work</a>
-                </article>
+                <div class="game-container">
+                    <div class="game-top">
+                        <img src="images/personal_logo_white-02.svg" alt="Game logo" width="80" height="60">
+                        <span><h4>NT Work</h4></span>
+                    </div>
+                    <article class="work-item" id="web" aria-labelledby="web-title">
+                        <h3 id="web-title">Web Design</h3>
+                        <a class="btn-1" href="portfolio.html#web-design" role="button" aria-label="See web design work">See Work</a>
+                        <!-- <div class="game-details">
+                            <div class="game-rating">
+                                <div class="rating-description">
+                                    <p>Great</p>
+                                    <p>Super</p>
+                                </div>
+                                <div class="rating">
+                                    <h5>G</h5>
+                                </div>
+                            </div>
+
+                            <div class="game-logo">
+                                <img src="images/personal_logo_white-02.svg" alt="Game makers logo" width="50" height="50">
+                            </div>
+                        </div> -->
+                    </article>
+                </div>
+                <div class="game-container">
+                    <div class="game-top">
+                        <img src="images/personal_logo_white-02.svg" alt="Game logo" width="80px" height="60px">
+                        <span><h4>NT WORK</h4></span>
+                    </div>
+                    <article class="work-item" id="user" aria-labelledby="ux-title">
+                        <h3 id="ux-title">User Experience Design</h3>
+                        <a class="btn-1" href="portfolio.html#user-experience" role="button" aria-label="See user-experience design work">See Work</a>
+                    </article>
+                </div>
+                <div class="game-container">
+                    <div class="game-top">
+                        <img src="images/personal_logo_white-02.svg" alt="Game logo" width="80px" height="60px">
+                        <span><h4>NT WORK</h4></span>
+                    </div>
+                    <article class="work-item" id="graphic" aria-labelledby="graphic-title">
+                        <h3 id="graphic-title">Graphic Design</h3>
+                        <a class="btn-1" href="portfolio.html#graphic-design" role="button" aria-label="See graphic design work">See Work</a>
+                    </article>
+                </div>
+                <div class="game-container">
+                    <div class="game-top">
+                        <img src="images/personal_logo_white-02.svg" alt="Game logo" width="80px" height="60px">
+                        <span><h4>NT WORK</h4></span>
+                    </div>
+                    <article class="work-item" id="video" aria-labelledby="video-title">
+                        <h3 id="video-title">Video Production</h3>
+                        <a class="btn-1" href="portfolio.html#video-production" role="button" aria-label="See video production design work">See Work</a>
+                    </article>
+                </div>
             </section>
         </section>
     </main>
@@ -68,5 +126,6 @@
             <a href="https://github.com/temp0065" target="_blank" aria-label="See Github"><i class="bi bi-github"></i></a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
