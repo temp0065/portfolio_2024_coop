@@ -50,10 +50,8 @@ const $headerBtns = document.getElementById("header-btns");
 const $headerTVOverlay = document.getElementById("header-tv-overlay");
 
 $headerBtns.addEventListener("mouseover", e => {
-    if (e.target.tagName === "A") {
-        $headerTVOverlay.classList.remove("fuzzy-overlay");
-        $headerTVOverlay.classList.add("test-card");    
-    };
+    $headerTVOverlay.classList.remove("fuzzy-overlay");
+    $headerTVOverlay.classList.add("test-card");    
 });
 
 $headerBtns.addEventListener("mouseleave", () => {

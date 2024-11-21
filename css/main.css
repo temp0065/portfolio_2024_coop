@@ -341,7 +341,7 @@ a:hover {
 
 .fuzzy-overlay {
     position: absolute;
-    inset: -300%;
+    inset: -200%;
     background: url(../images/white_noise.png);
     opacity: 15%;
     animation: shift 0.2s linear infinite both;
@@ -354,7 +354,6 @@ a:hover {
     background-size: cover;
     z-index: 0;
     inset: 0%;
-    opacity: 90%;
 }
 
 .portfolio-header h1 {
